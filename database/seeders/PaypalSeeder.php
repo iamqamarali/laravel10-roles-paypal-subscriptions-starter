@@ -14,16 +14,21 @@ class PaypalSeeder extends Seeder
      */
     public function run(): void
     {
+
+        // create product on paypal
         $paypalProduct = $this->createPaypalProduct();
         if(!isset($paypalProduct['id']))
             throw new Exception('Could not create paypal PRODUCT');
 
-        $paypalPlan = $this->createPaypalPlan($paypalProduct['id'], '97');
 
+
+        // create plan for product on paypal
+        $paypalPlan = $this->createPaypalPlan($paypalProduct['id'], '97');
         if(!isset($paypalPlan['id']))
             throw new Exception('Could not create paypal PLAN');
 
 
+        // save product in database
         $product = new Product([
             'name' => 'Online arbitrage leads',
             'description' => 'Amazon online arbitrage leads',
