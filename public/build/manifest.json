@@ -1,0 +1,17 @@
+{
+  "resources/css/profile-page.css": {
+    "file": "assets/profile-page-4487fba2.css",
+    "isEntry": true,
+    "src": "resources/css/profile-page.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-58f1a6a3.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/sass/app.sass": {
+    "file": "assets/app-f32d2d14.css",
+    "isEntry": true,
+    "src": "resources/sass/app.sass"
+  }
+}
